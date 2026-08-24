@@ -78,3 +78,97 @@ body{
   background: blue;
   position: fixed;
 }
+
+
+.hover-trigger{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hero-text,
+.new1{
+    margin-top: 50px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 70px;
+    display: flex;
+    text-align: center;
+
+}
+.image-stack{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 260px;
+    height: 350px;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    z-index: 100;
+}
+.stack-card{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s
+}
+
+.show{
+  opacity: 1;
+}
+
+.menu-container {
+  position: relative;
+  width: 90vw;
+  max-width: 1200px;
+}
+
+.title {
+  font-size: clamp(3rem, 7vw, 7rem);
+  font-weight: 900;
+  color: #111;
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.description {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  max-width: 300px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.menu-list:hover .menu-item {
+  opacity: 0.2;
+}
+
+.menu-list .menu-item:hover {
+  opacity: 1;
+}
+
+.menu-list .menu-item:hover .description {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.pointer{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: blue;
+  position: relative;
+}
