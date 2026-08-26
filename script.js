@@ -6,6 +6,8 @@ menuBtn.addEventListener("click", () => {
   fixedMenu.style.top = isOpen ? "-110%" : "0%";
 });
 
+//Added Short Note
+
 const box = document.querySelector(".cursor-box");
 const pointer = document.querySelector(".pointer");
 
